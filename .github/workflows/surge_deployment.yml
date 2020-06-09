@@ -22,12 +22,12 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
     - name: Install nodeJS
-    - uses: actions/setup-node@v2-beta
+      uses: actions/setup-node@v2-beta
       with:
         node-version: 12
     - uses: borales/actions-yarn@v2.0.0
       with:
-        cmd: install # will run 'yarn install' command 
+        cmd: install # will run `yarn install` command 
         
     - name: Build React App
       run:  yarn build
