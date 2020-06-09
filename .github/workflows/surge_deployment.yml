@@ -25,9 +25,9 @@ jobs:
     - uses: actions/setup-node@v2-beta
       with:
         node-version: 12
-    - uses: sergioramos/yarn-actions/install@v6
+    - uses: borales/actions/install@v2.0.0
       with:
-        frozen-lockfile: true
+        cmd: install # will run 'yarn install' command 
         
     - name: Build React App
       run:  yarn build
